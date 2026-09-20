@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sayed Osman Sadat — Full stack developer</title>
+<meta name="description" content="Full stack developer building web apps end to end, from database to interface.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header id="site-header">
+  <div class="bar">
+    <a class="logo" href="#top">
+      <span class="logo-mark" aria-hidden="true"> O </span>
+      Sayed Osman Sadat
+    </a>
+
+    <div class="bar-right">
+      <nav aria-label="Main">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="icon-btn" id="theme-btn" aria-label="Switch to dark mode" title="Switch theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true" id="theme-icon"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-1-13h2v3h-2V3Zm0 15h2v3h-2v-3ZM3 11h3v2H3v-2Zm15 0h3v2h-3v-2ZM5.0 4.6l1.4-1.4 2.1 2.1-1.4 1.4-2.1-2.1Zm10.5 10.5 1.4-1.4 2.1 2.1-1.4 1.4-2.1-2.1Zm2.1-11.9L19 4.6l-2.1 2.1-1.4-1.4 2.1-2.1ZM6.4 15.1l1.4 1.4-2.1 2.1-1.4-1.4 2.1-2.1Z"/></svg>
+      </button>
+
+      <button class="icon-btn nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div>
+        <p class="badge"><span class="pulse" aria-hidden="true"></span> Available for new projects</p>
+
+        <h1>Hi, I'm Sayed —<br>I build <span class="underline">full stack</span> web apps.</h1>
+        <p class="role">Full stack developer</p>
+
+        <p class="lede">I take an idea from an empty repository to something people can actually sign into: database, API, interface, and the deploy pipeline in between. Comfortable being the only developer on a project, and easy to work with when I'm not.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#projects">See my projects</a>
+          <a class="btn btn-soft" href="mailto:sayed@example.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.3.5 7.7 5.9L19.7 6H4.3ZM20 7.6l-7.4 5.7a1 1 0 0 1-1.2 0L4 7.6V18.5c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V7.6Z"/></svg>
+            Say hello
+          </a>
+        </div>
+
+      </div>
+
+      <div class="photo-slot">
+        <div class="photo-frame">
+          <img id="photo-img"  alt="Sayed Osman Sadat" src="IMG_20260812_203601.png">
+          <div class="photo-empty" id="photo-empty">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6l1.2 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.8L9 3Zm3 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"/></svg>
+            <button class="btn-mini" id="photo-pick" type="button">Try a photo</button>
+          </div>
+          <input type="file" id="photo-input" accept="image/*">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section-tint" id="services">
+    <div class="section-head">
+      <span class="label">What I do</span>
+      <h2>Three sides of the same job</h2>
+      <p>Most projects need all three. I can take one piece or the whole thing.</p>
+    </div>
+
+    <div class="wrap cards">
+      <article class="card">
+        <div class="card-icon i-teal" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 4v10h16V8H4Zm2 2h5v6H6v-6Zm7 0h5v2h-5v-2Zm0 4h5v2h-5v-2Z"/></svg>
+        </div>
+        <h3>Front end</h3>
+        <p>Interfaces that load fast and work on a cheap phone. Responsive layouts, keyboard support, and no surprises when the screen gets small.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon i-sun" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2c4.4 0 8 1.34 8 3v14c0 1.66-3.6 3-8 3s-8-1.34-8-3V5c0-1.66 3.6-3 8-3Zm6 6.6c-1.6.86-3.9 1.4-6 1.4s-4.4-.54-6-1.4v2.9c0 .55 2.4 1.5 6 1.5s6-.95 6-1.5V8.6Zm0 6c-1.6.86-3.9 1.4-6 1.4s-4.4-.54-6-1.4V19c0 .55 2.4 1.5 6 1.5s6-.95 6-1.5v-4.4ZM12 4C8.4 4 6 4.95 6 5.5S8.4 7 12 7s6-.95 6-1.5S15.6 4 12 4Z"/></svg>
+        </div>
+        <h3>Back end</h3>
+        <p>REST and GraphQL APIs, authentication, payments, and database design that still makes sense after the feature list doubles.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon i-lilac" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M6.5 20a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 17.7 9.2 4.4 4.4 0 0 1 17.5 20h-11Zm5.5-11-4 4h2.5v4h3v-4H16l-4-4Z"/></svg>
+        </div>
+        <h3>Ship and run</h3>
+        <p>Docker, CI, and a deploy you can trigger without holding your breath. Plus logging and backups, so problems are visible before users report them.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Stack -->
+  <section class="section" id="stack">
+    <div class="section-head">
+      <span class="label">Toolkit</span>
+      <h2>What I build with</h2>
+      <p>The tools I reach for most. I'm happy to learn yours.</p>
+    </div>
+
+    <div class="stack">
+      <div class="stack-row">
+        <h3>Front end</h3>
+        <ul class="chips">
+          <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li>
+          <li class="chip">TypeScript</li><li class="chip">React</li><li class="chip">Next.js</li>
+          <li class="chip">Tailwind</li>
+        </ul>
+      </div>
+      <div class="stack-row">
+        <h3>Back end</h3>
+        <ul class="chips">
+          <li class="chip">Node.js</li><li class="chip">Express</li><li class="chip">Python</li>
+          <li class="chip">Django</li><li class="chip">REST</li><li class="chip">GraphQL</li>
+        </ul>
+      </div>
+      <div class="stack-row">
+        <h3>Data</h3>
+        <ul class="chips">
+          <li class="chip">PostgreSQL</li><li class="chip">MongoDB</li><li class="chip">Redis</li>
+          <li class="chip">Prisma</li>
+        </ul>
+      </div>
+      <div class="stack-row">
+        <h3>Tools</h3>
+        <ul class="chips">
+          <li class="chip">Git</li><li class="chip">Docker</li><li class="chip">GitHub Actions</li>
+          <li class="chip">AWS</li><li class="chip">Vercel</li><li class="chip">Figma</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-tint" id="projects">
+    <div class="section-head">
+      <span class="label">Projects</span>
+      <h2>Things I've built</h2>
+      <p>Swap these three for your own work — keep the shape, change the words.</p>
+    </div>
+
+    <div class="projects">
+      <article class="project">
+        <div class="project-mark m-1" aria-hidden="true">Sk</div>
+        <div>
+          <h3>Shopkeep</h3>
+          <p>An inventory and sales dashboard for small shops. Owners scan a barcode, and stock, receipts, and the daily total update together. Handles about 1,200 items per shop without slowing down.</p>
+          <div class="project-links">
+            <a href="#">Live site</a>
+            <a href="#">Source code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-mark m-2" aria-hidden="true">Tf</div>
+        <div>
+          <h3>TaskFlow</h3>
+          <p>A team task board with real-time updates over WebSockets. Two people can drag the same card and neither loses their change. Built with React on the front and Node with PostgreSQL behind it.</p>
+          <div class="project-links">
+            <a href="#">Live site</a>
+            <a href="#">Source code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-mark m-3" aria-hidden="true">Ln</div>
+        <div>
+          <h3>LearnNest</h3>
+          <p>A course platform with video lessons, quizzes, and progress tracking. Includes an admin area where teachers upload content themselves, so nobody has to email me a PDF at midnight.</p>
+          <div class="project-links">
+            <a href="#">Live site</a>
+            <a href="#">Source code</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="label">About</span>
+      <h2>A bit about me</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm Sayed Osman Sadat, a full stack developer. I started with a single HTML page and a lot of trial and error, and kept going until I could build the whole thing — the part people click and the part that keeps their data safe.</p>
+        <p>What I enjoy most is the middle of a project, when the pieces start connecting and a rough idea turns into something you can log into and use. I like clear code, small pull requests, and telling a client early when something will take longer than we hoped.</p>
+        <p>Outside of work I'm usually reading about system design or rebuilding something that already worked fine, just to see if I can do it better.</p>
+      </div>
+
+      <dl class="facts">
+        <div class="fact"><dt>Role</dt><dd>Full stack developer</dd></div>
+        <div class="fact"><dt>Focus</dt><dd>React and Node, PostgreSQL, clean APIs</dd></div>
+        <div class="fact"><dt>Working style</dt><dd>Remote, async-friendly, weekly check-ins</dd></div>
+        <div class="fact"><dt>Languages</dt><dd>English, Bangla</dd></div>
+        <div class="fact"><dt>Status</dt><dd>Open to freelance and full-time roles</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-tint" id="contact">
+    <div class="contact-head">
+      <span class="label">Contact</span>
+      <h2>Let's talk about your project</h2>
+      <p class="lede">Tell me what you're building and when you need it. I reply to every message, usually within a day.</p>
+      <div class="mail-row">
+        <a class="btn btn-solid" href="mailto:sayed@example.com">sayed@example.com</a>
+        <button class="btn btn-soft" id="copy-mail" type="button" data-mail="sayed@example.com">Copy email</button>
+      </div>
+    </div>
+
+    <div class="links">
+      <a class="link-card" href="https://github.com/your-username">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.23 1.92 1.23 3.23 0 4.63-2.8 5.65-5.48 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+        </span>
+        <span><strong>GitHub</strong><span>Code and side projects</span></span>
+      </a>
+
+      <a class="link-card" href="https://wa.me/8801000000000">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.83c0 1.94.53 3.75 1.45 5.31L2 22l4.99-1.6a9.9 9.9 0 0 0 5.05 1.38h.01c5.43 0 9.84-4.4 9.84-9.83 0-2.63-1.03-5.1-2.89-6.96A9.78 9.78 0 0 0 12.04 2Zm0 1.8c2.14 0 4.15.84 5.67 2.35a7.96 7.96 0 0 1 2.35 5.68c0 4.45-3.62 8.06-8.07 8.06a8.1 8.1 0 0 1-4.3-1.24l-.31-.19-3.16 1.01 1.03-3.08-.2-.32a8 8 0 0 1-1.25-4.24c0-4.45 3.62-8.03 8.24-8.03Zm-3.6 4.3c-.17 0-.44.06-.68.31-.23.25-.9.88-.9 2.13s.92 2.47 1.05 2.64c.13.17 1.8 2.75 4.38 3.76 2.14.84 2.58.67 3.04.63.46-.04 1.5-.61 1.71-1.2.21-.59.21-1.1.15-1.2-.06-.11-.23-.17-.48-.3-.25-.12-1.5-.74-1.73-.82-.23-.09-.4-.13-.57.12-.17.25-.65.82-.8.99-.14.17-.29.19-.54.06-.25-.12-1.07-.39-2.03-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.38.11-.5.11-.11.25-.29.38-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.37-.77-1.87-.2-.49-.4-.42-.55-.43h-.6Z"/></svg>
+        </span>
+        <span><strong>WhatsApp</strong><span>Quickest way to reach me</span></span>
+      </a>
+
+      <a class="link-card" href="https://linkedin.com/in/your-username">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6.5 0h3.8v1.64h.05a4.17 4.17 0 0 1 3.75-2.06c4 0 4.74 2.63 4.74 6.05V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21h-4V9Z"/></svg>
+        </span>
+        <span><strong>LinkedIn</strong><span>Work history and contact</span></span>
+      </a>
+
+      <a class="link-card" href="https://x.com/your-username">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7.4 8.45L23.3 22h-6.8l-5.32-6.96L4.98 22H1.86l7.92-9.05L1 2h6.97l4.81 6.36L18.9 2Zm-1.1 18.1h1.72L7.28 3.8H5.44l12.36 16.3Z"/></svg>
+        </span>
+        <span><strong>X</strong><span>Notes on what I'm building</span></span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <p>© <span id="year">2026</span> Sayed Osman Sadat</p>
+    <p>Built with HTML, CSS and JavaScript.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* Year */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* Mobile menu */
+  var toggle = document.querySelector('.nav-toggle');
+  var list = document.getElementById('nav-list');
+
+  toggle.addEventListener('click', function () {
+    var open = list.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+
+  list.addEventListener('click', function (e) {
+    if (e.target.closest('a')) {
+      list.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open menu');
+    }
+  });
+
+  /* Header shadow on scroll */
+  var header = document.getElementById('site-header');
+  var onScroll = function () {
+    header.classList.toggle('is-stuck', window.scrollY > 10);
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* Highlight the section in view */
+  var links = Array.prototype.slice.call(list.querySelectorAll('a'));
+  var targets = links
+    .map(function (a) { return document.querySelector(a.getAttribute('href')); })
+    .filter(Boolean);
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        links.forEach(function (a) {
+          if (a.getAttribute('href') === '#' + entry.target.id) {
+            a.setAttribute('aria-current', 'true');
+          } else {
+            a.removeAttribute('aria-current');
+          }
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    targets.forEach(function (t) { io.observe(t); });
+  }
+
+  /* Light / dark toggle */
+  var themeBtn = document.getElementById('theme-btn');
+  var sunPath = document.querySelector('#theme-icon path').getAttribute('d');
+  var moonPath = 'M12.3 22a10 10 0 0 1-1.1-19.94c.85-.1 1.4.9.92 1.6a7.5 7.5 0 0 0 9.5 11.02c.77-.36 1.6.33 1.34 1.14A10 10 0 0 1 12.3 22Z';
+
+  function paint(mode) {
+    document.documentElement.setAttribute('data-theme', mode);
+    var dark = mode === 'dark';
+    document.querySelector('#theme-icon path').setAttribute('d', dark ? moonPath : sunPath);
+    themeBtn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem('theme'); } catch (err) { saved = null; }
+  var startsDark = saved
+    ? saved === 'dark'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  paint(startsDark ? 'dark' : 'light');
+
+  themeBtn.addEventListener('click', function () {
+    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    paint(next);
+    try { localStorage.setItem('theme', next); } catch (err) {}
+  });
+
+  /* Photo preview — lets you see your own picture in place before you swap the file in */
+  var pick = document.getElementById('photo-pick');
+  var input = document.getElementById('photo-input');
+  var img = document.getElementById('photo-img');
+  var empty = document.getElementById('photo-empty');
+
+  pick.addEventListener('click', function () { input.click(); });
+
+  input.addEventListener('change', function () {
+    var file = input.files && input.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      img.src = reader.result;
+      img.hidden = false;
+      empty.hidden = true;
+    };
+    reader.readAsDataURL(file);
+  });
+
+  if (img.getAttribute('src')) {
+    img.hidden = false;
+    empty.hidden = true;
+  }
+
+  /* Copy email */
+  var copyBtn = document.getElementById('copy-mail');
+  copyBtn.addEventListener('click', function () {
+    var mail = copyBtn.dataset.mail;
+    var done = function () {
+      copyBtn.textContent = 'Copied';
+      setTimeout(function () { copyBtn.textContent = 'Copy email'; }, 1800);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(mail).then(done, function () {
+        copyBtn.textContent = 'Press and hold to copy';
+      });
+    } else {
+      copyBtn.textContent = mail;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
